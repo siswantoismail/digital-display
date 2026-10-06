@@ -1,0 +1,6 @@
+{
+  "name": "Digital Display Informasi KGTK Provinsi Gorontalo",
+  "description": "Sistem display informasi digital cerdas kantor KGTK Provinsi Gorontalo untuk monitor/TV kantor dengan rotasi otomatis, serbu kasubi (rabu), pegawai berprestasi (senin), jadwal kegiatan rutin mingguan, notifikasi pengumuman darurat real-time, dan dashboard admin terintegrasi database MySQL Laragon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
