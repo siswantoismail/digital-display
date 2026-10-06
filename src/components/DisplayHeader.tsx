@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { KGTKEmblem } from "./Icons.tsx";
 import {
   Maximize2,
   Minimize2,
@@ -8,6 +7,8 @@ import {
   VolumeX,
   CloudSun,
   Clock,
+  Pause,
+  Play,
 } from "lucide-react";
 import { DisplaySetting } from "../types/index.ts";
 
@@ -67,6 +68,7 @@ export function DisplayHeader({
 
   // Format date in Indonesian: "Rabu, 7 Oktober 2026"
   const formattedDate = new Intl.DateTimeFormat("id-ID", {
+    timeZone: "Asia/Makassar",
     weekday: "long",
     day: "numeric",
     month: "long",
@@ -75,11 +77,20 @@ export function DisplayHeader({
 
   // Format time with seconds: "08:45:12 WITA"
   const formattedTime = new Intl.DateTimeFormat("id-ID", {
+    timeZone: "Asia/Makassar",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
     hour12: false,
   }).format(currentTime);
+
+  const timeZoneLabel =
+    new Intl.DateTimeFormat("id-ID", {
+      timeZone: "Asia/Makassar",
+      timeZoneName: "short",
+    })
+      .formatToParts(currentTime)
+      .find((part) => part.type === "timeZoneName")?.value || "WITA";
 
   return (
     <header className="shrink-0 relative z-30 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white shadow-xl">
@@ -112,7 +123,7 @@ export function DisplayHeader({
               <Clock className="w-3.5 h-3.5 text-sky-400 inline" />
               <span>{formattedTime}</span>
               <span className="text-xs text-sky-400 font-semibold tracking-wider">
-                WITA
+                {timeZoneLabel}
               </span>
             </div>
           </div>
@@ -123,12 +134,16 @@ export function DisplayHeader({
             <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/60 border border-slate-700/50">
               <button
                 onClick={onTogglePause}
-                className="text-xs font-medium text-slate-300 hover:text-white  py-0.5 rounded bg-slate-700/60 hover:bg-slate-700 transition-colors"
+                className="text-slate-300 hover:text-white transition-colors"
                 title={
                   isPaused ? "Lanjutkan Rotasi Slide" : "Jeda Rotasi Slide"
                 }
               >
-                {isPaused ? "▶" : "⏸"}
+                {isPaused ? (
+                  <Play className="w-4 h-4" />
+                ) : (
+                  <Pause className="w-4 h-4" />
+                )}
               </button>
             </div>
             {/* <button
