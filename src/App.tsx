@@ -55,16 +55,10 @@ const DEFAULT_IMAGES: ImageItem[] = [
 // 2. Daftar Video (public/videos/)
 const DEFAULT_VIDEOS: VideoItem[] = [
   {
-    id: "vid-2",
-    src: "/videos/apresiasi-video.mp4",
+    id: "vid-1",
+    src: "/videos/apresiasi.mp4",
     title: "Video Profil Pelayanan KGTK Gorontalo 1",
     duration: 15,
-  },
-  {
-    id: "vid-1",
-    src: "/videos/video1.mp4",
-    title: "Video Edukasi & Literasi Tenaga Pendidik 2",
-    duration: 60,
   },
 ];
 
