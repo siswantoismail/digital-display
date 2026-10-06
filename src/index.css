@@ -35,7 +35,7 @@
   display: inline-flex;
   width: max-content;
   white-space: nowrap;
-  animation: marquee 45s linear infinite;
+  animation: marquee 65s linear infinite;
   will-change: transform;
 }
 
