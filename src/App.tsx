@@ -264,7 +264,7 @@ export default function App() {
           <ImageDisplay
             key={currentSlide.data.id}
             item={currentSlide.data}
-            fitMode={mediaFitModes[currentSlide.data.id] ?? "cover"}
+            fitMode={mediaFitModes[currentSlide.data.id] ?? "contain"} // Default mode setiap media adalah "cover" / "contain" Mode Penuh.
             onFitModeChange={(mode) => {
               setMediaFitModes((prev) => ({
                 ...prev,
@@ -279,7 +279,7 @@ export default function App() {
             isPaused={isPaused}
             onTogglePause={() => setIsPaused((p) => !p)}
             onVideoEnded={handleNextSlide}
-            fitMode={mediaFitModes[currentSlide.data.id] ?? "cover"}
+            fitMode={mediaFitModes[currentSlide.data.id] ?? "contain"}
             onFitModeChange={(mode) => {
               setMediaFitModes((prev) => ({
                 ...prev,
