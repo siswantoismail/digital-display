@@ -34,7 +34,7 @@ const DEFAULT_IMAGES: ImageItem[] = [
   },
   {
     id: "img-2",
-    src: "/images/apresiasi.jpeg",
+    src: "/images/apresiasi1.jpeg",
     title: "Gambar Dokumentasi Guru & Tenaga Kependidikan 2",
     duration: 12,
   },
@@ -54,12 +54,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
 
 // 2. Daftar Video (public/videos/)
 const DEFAULT_VIDEOS: VideoItem[] = [
-  {
-    id: "vid-1",
-    src: "/videos/apresiasi.mp4",
-    title: "Video Profil Pelayanan KGTK Gorontalo 1",
-    duration: 15,
-  },
+  // {
+  //   id: "vid-1",
+  //   src: "/videos/apresiasi.mp4",
+  //   title: "Video Profil Pelayanan KGTK Gorontalo 1",
+  //   duration: 15,
+  // },
 ];
 
 // 3. Pesan Footer: Teks Berjalan & Pesan Merah Berjalan
