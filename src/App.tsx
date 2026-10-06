@@ -28,19 +28,25 @@ import {
 const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-1",
-    src: "/images/gambar1.jpeg",
+    src: "/images/berprestasi.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
   },
   {
     id: "img-2",
-    src: "/images/APRESIASI.jpeg",
+    src: "/images/apresiasi.jpeg",
     title: "Gambar Dokumentasi Guru & Tenaga Kependidikan 2",
     duration: 12,
   },
   {
     id: "img-3",
-    src: "/images/gambar3.jpeg",
+    src: "/images/serbu-kasubi.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-4",
+    src: "/images/kamis-asri.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
