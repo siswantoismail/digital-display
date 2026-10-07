@@ -156,6 +156,9 @@ const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
   },
 ];
 
+// Daftar audio yang diputar secara bergantian
+const daftarAudio = ["/audio/audio2.mpeg", "/audio/audio3.mpeg"];
+
 type PlaylistItem =
   | { type: "image"; data: ImageItem }
   | { type: "video"; data: VideoItem };
@@ -163,6 +166,9 @@ type PlaylistItem =
 export default function App() {
   // Pemutar backsound yang tetap berjalan saat slide berganti
   const backsoundRef = useRef<HTMLAudioElement | null>(null);
+
+  // Menyimpan posisi audio yang sedang diputar
+  const audioIndexRef = useRef(0);
   // State data utama (diinisialisasi langsung dari data konstan dalam program)
   const [images] = useState<ImageItem[]>(DEFAULT_IMAGES);
   const [videos] = useState<VideoItem[]>(DEFAULT_VIDEOS);
@@ -328,21 +334,36 @@ export default function App() {
     setUrgentMessages((prev) => prev.filter((m) => m.id !== id));
   };
 
+  useEffect(() => {
+    const audio = backsoundRef.current;
+    if (!audio) return;
+
+    const putarAudioBerikutnya = () => {
+      audioIndexRef.current = (audioIndexRef.current + 1) % daftarAudio.length;
+
+      audio.src = daftarAudio[audioIndexRef.current];
+      audio.load();
+
+      audio.play().catch((error) => {
+        console.warn("Audio berikutnya gagal diputar:", error);
+      });
+    };
+
+    audio.addEventListener("ended", putarAudioBerikutnya);
+
+    return () => {
+      audio.removeEventListener("ended", putarAudioBerikutnya);
+    };
+  }, []);
+
   return (
     <div className="relative w-screen h-screen flex flex-col bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
       {/* Pemutar musik latar */}
+
       <audio
         ref={backsoundRef}
         src="/audio/audio2.mpeg"
-        autoPlay
-        loop
-        preload="auto"
-      />
-      <audio
-        ref={backsoundRef}
-        src="/audio/audio3.mpeg"
-        autoPlay
-        loop
+        loop={false}
         preload="auto"
       />
       {/* 1. HEADER (Identitas Kantor, Jam & Cuaca Gorontalo, Kontrol) */}
