@@ -62,6 +62,24 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
+  {
+    id: "img-7",
+    src: "/images/gambar6.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-8",
+    src: "/images/gambar8.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-9",
+    src: "/images/sosialmedia.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
 ];
 
 // 2. Daftar Video (public/videos/)
@@ -270,7 +288,13 @@ export default function App() {
   return (
     <div className="relative w-screen h-screen flex flex-col bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
       {/* Pemutar musik latar */}
-      <audio ref={backsoundRef} src="/audio/audio2.mpeg" loop preload="auto" />
+      <audio
+        ref={backsoundRef}
+        src="/audio/audio2.mpeg"
+        autoPlay
+        loop
+        preload="auto"
+      />
       {/* 1. HEADER (Identitas Kantor, Jam & Cuaca Gorontalo, Kontrol) */}
       <DisplayHeader
         settings={settings}
