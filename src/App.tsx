@@ -32,12 +32,7 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
   },
-  {
-    id: "img-2",
-    src: "/images/apresiasi1.jpeg",
-    title: "Gambar Dokumentasi Guru & Tenaga Kependidikan 2",
-    duration: 12,
-  },
+
   {
     id: "img-3",
     src: "/images/serbu-kasubi.jpeg",
