@@ -146,26 +146,22 @@ export function DisplayHeader({
                 )}
               </button>
             </div>
-            {/* <button
+            <button
               onClick={onToggleMute}
               className={`p-2 rounded-lg border transition-colors ${
                 audioMuted
                   ? "bg-slate-800 text-slate-400 border-slate-700"
                   : "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
               }`}
-              title={
-                audioMuted
-                  ? "Aktifkan Suara Notifikasi"
-                  : "Senyapkan Suara Notifikasi"
-              }
-              aria-label="Suara"
+              title={audioMuted ? "Aktifkan Backsound" : "Matikan Backsound"}
+              aria-label="Kontrol Backsound"
             >
               {audioMuted ? (
                 <VolumeX className="w-4 h-4" />
               ) : (
                 <Volume2 className="w-4 h-4" />
               )}
-            </button> */}
+            </button>
 
             <button
               onClick={toggleFullscreen}

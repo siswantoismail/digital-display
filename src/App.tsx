@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { ImageDisplay, ImageItem } from "./components/ImageDisplay.tsx";
 import { VideoDisplay, VideoItem } from "./components/VideoDisplay.tsx";
 import { Footer, UrgentMessage } from "./components/Footer.tsx";
@@ -100,6 +100,8 @@ type PlaylistItem =
   | { type: "video"; data: VideoItem };
 
 export default function App() {
+  // Pemutar backsound yang tetap berjalan saat slide berganti
+  const backsoundRef = useRef<HTMLAudioElement | null>(null);
   // State data utama (diinisialisasi langsung dari data konstan dalam program)
   const [images] = useState<ImageItem[]>(DEFAULT_IMAGES);
   const [videos] = useState<VideoItem[]>(DEFAULT_VIDEOS);
@@ -216,6 +218,25 @@ export default function App() {
     setSlideProgress(0);
   };
 
+  // Kontrol hidup/mati backsound
+  const handleToggleBacksound = async () => {
+    const audio = backsoundRef.current;
+
+    if (!audio) return;
+
+    if (audio.paused) {
+      try {
+        await audio.play();
+        setAudioMuted(false);
+      } catch (error) {
+        console.error("Backsound gagal diputar:", error);
+      }
+    } else {
+      audio.pause();
+      setAudioMuted(true);
+    }
+  };
+
   const handlePrevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
     setSlideProgress(0);
@@ -248,6 +269,8 @@ export default function App() {
 
   return (
     <div className="relative w-screen h-screen flex flex-col bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
+      {/* Pemutar musik latar */}
+      <audio ref={backsoundRef} src="/audio/audio2.mpeg" loop preload="auto" />
       {/* 1. HEADER (Identitas Kantor, Jam & Cuaca Gorontalo, Kontrol) */}
       <DisplayHeader
         settings={settings}
@@ -256,7 +279,7 @@ export default function App() {
           setIsAdminModalOpen(true);
         }}
         audioMuted={audioMuted}
-        onToggleMute={() => setAudioMuted((m) => !m)}
+        onToggleMute={handleToggleBacksound}
         activeSlideIndex={currentIndex % (totalSlides || 1)}
         totalSlides={totalSlides}
         slideProgress={slideProgress}
