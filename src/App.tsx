@@ -50,6 +50,18 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
+  {
+    id: "img-5",
+    src: "/images/gambar4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-6",
+    src: "/images/gambar3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
 ];
 
 // 2. Daftar Video (public/videos/)
