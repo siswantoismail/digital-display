@@ -93,18 +93,6 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
-    id: "img-12",
-    src: "/images/stem2.jpeg",
-    title: "Gambar Transformasi Pendidikan Gorontalo 3",
-    duration: 12,
-  },
-  {
-    id: "img-13",
-    src: "/images/stem2.jpeg",
-    title: "Gambar Transformasi Pendidikan Gorontalo 3",
-    duration: 12,
-  },
-  {
     id: "img-14",
     src: "/images/stem3.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
@@ -131,6 +119,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-18",
     src: "/images/gambar10.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-19",
+    src: "/images/kesehatan.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
@@ -345,6 +339,13 @@ export default function App() {
       <audio
         ref={backsoundRef}
         src="/audio/audio2.mpeg"
+        autoPlay
+        loop
+        preload="auto"
+      />
+      <audio
+        ref={backsoundRef}
+        src="/audio/audio3.mpeg"
         autoPlay
         loop
         preload="auto"
