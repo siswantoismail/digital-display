@@ -189,6 +189,66 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
+  {
+    id: "img-30",
+    src: "/images/info1.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-31",
+    src: "/images/info2.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-32",
+    src: "/images/info3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-33",
+    src: "/images/info4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-34",
+    src: "/images/info5.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-35",
+    src: "/images/info6.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-36",
+    src: "/images/info7.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-37",
+    src: "/images/info8.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-38",
+    src: "/images/info9.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-39",
+    src: "/images/info10.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
 ];
 
 // 2. Daftar Video (public/videos/)
