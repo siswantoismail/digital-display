@@ -269,6 +269,18 @@ const DEFAULT_IMAGES: ImageItem[] = [
   },
   {
     id: "img-40",
+    src: "/images/info11.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-41",
+    src: "/images/info12.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-40",
     src: "/images/habibi1.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
@@ -326,7 +338,7 @@ const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
       "Pertandingan Uji Coba Mini Soccer antara Peserta Magang dan Tim KGTK",
     content:
       "Pertandingan uji coba mini soccer antara peserta magang dan tim KGTK Gorontalo berlangsung hari ini pukul 16.00 WITA di Lapangan KGTK.",
-    priority: "urgent",
+    priority: "important",
   },
   // {
   //   id: 2,
@@ -717,7 +729,7 @@ export default function App() {
               {/* Form Tambah Pesan Merah */}
               <div className="p-4 rounded-xl bg-slate-950 border border-rose-900/40 space-y-3">
                 <h4 className="text-xs font-bold text-rose-300 flex items-center gap-1.5">
-                  <span>Kelola Pesan Merah Berjalan (Urgent / Penting):</span>
+                  <span>Kelola Pesan Merah Berjalan (Penting):</span>
                 </h4>
 
                 <form onSubmit={handleAddUrgent} className="space-y-3">
@@ -738,7 +750,7 @@ export default function App() {
                       className="px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-rose-300 text-xs font-bold focus:outline-none focus:border-rose-500"
                     >
                       <option value="urgent">[URGENT]</option>
-                      <option value="important">[PENTING]</option>
+                      <option value="PENTING">[PENTING]</option>
                     </select>
                   </div>
 

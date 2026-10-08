@@ -48,7 +48,7 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
                   <BellRing className="w-4 h-4 text-rose-400 animate-bounce inline shrink-0" />
 
                   <span className="font-bold underline underline-offset-4 decoration-rose-500/60">
-                    [PENGUMUMAN {ann.priority.toUpperCase()}]: {ann.title}
+                    PENGUMUMAN: {ann.title}
                   </span>
 
                   <span className="text-slate-400 font-normal">
@@ -67,7 +67,6 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
 
                 <span className="text-slate-600 px-2">✦</span>
               </span>
-
               {/* Identitas KGTK */}
               <span className="inline-flex items-center gap-2 text-slate-300">
                 <span>
@@ -75,7 +74,6 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
                   {" • "}
                   Bersama Mengabdi Membangun Karakter Guru Bangsa
                 </span>
-
                 <span className="text-slate-600 px-2">✦</span>
               </span>
 
@@ -84,7 +82,6 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
                   Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas
                   Kantor KGTK Provinsi Gorontalo
                 </span>
-
                 <span className="text-slate-600 px-2">✦</span>
               </span>
               <span className="inline-flex items-center gap-2 text-slate-300">
@@ -92,7 +89,6 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
                   Pelatihan PM KKA di Ruang Aula Huyula Ambu Kantor KGTK
                   Provinsi Gorontalo
                 </span>
-
                 <span className="text-slate-600 px-2">✦</span>
               </span>
               <span className="inline-flex items-center gap-2 text-slate-300">
