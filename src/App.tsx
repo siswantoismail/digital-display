@@ -41,85 +41,151 @@ const DEFAULT_IMAGES: ImageItem[] = [
   },
   {
     id: "img-4",
-    src: "/images/kamis-asri.jpeg",
+    src: "/images/kamis1.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-5",
-    src: "/images/gambar4.jpeg",
+    src: "/images/kamis2.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-6",
-    src: "/images/gambar3.jpeg",
+    src: "/images/kamis3.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-7",
-    src: "/images/gambar6.jpeg",
+    src: "/images/gambar3.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-8",
-    src: "/images/gambar8.jpeg",
+    src: "/images/gambar6.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-9",
-    src: "/images/sosialmedia.jpeg",
+    src: "/images/gambar8.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-10",
-    src: "/images/stem1.jpeg",
+    src: "/images/sosialmedia.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-11",
+    src: "/images/stem1.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-12",
     src: "/images/stem2.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-14",
+    id: "img-13",
     src: "/images/stem3.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-15",
+    id: "img-14",
     src: "/images/stem4.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-16",
+    id: "img-15",
     src: "/images/stem5.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-17",
+    id: "img-16",
     src: "/images/stem6.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-18",
+    id: "img-17",
     src: "/images/gambar10.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-19",
+    id: "img-18",
     src: "/images/kesehatan.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-19",
+    src: "/images/kegiatan11.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-20",
+    src: "/images/kegiatan2.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-21",
+    src: "/images/kegiatan3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-22",
+    src: "/images/kegiatan4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-23",
+    src: "/images/kegiatan5.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-24",
+    src: "/images/kegiatan6.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-25",
+    src: "/images/kegiatan7.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-26",
+    src: "/images/kegiatan8.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-28",
+    src: "/images/kegiatan9.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-29",
+    src: "/images/kegiatan10.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
@@ -157,7 +223,7 @@ const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
 ];
 
 // Daftar audio yang diputar secara bergantian
-const daftarAudio = ["/audio/audio2.mpeg", "/audio/audio3.mpeg"];
+const daftarAudio = ["/audio/audio2.mpeg"];
 
 type PlaylistItem =
   | { type: "image"; data: ImageItem }
@@ -441,7 +507,7 @@ export default function App() {
         )}
 
         {/* Indikator Dot di Pojok Kanan Bawah Layar */}
-        <div className="absolute bottom-4 right-6 z-20 hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-slate-800/80">
+        {/* <div className="absolute bottom-4 right-6 z-20 hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-slate-800/80">
           {playlist.map((item, idx) => (
             <button
               key={item.data.id}
@@ -457,7 +523,7 @@ export default function App() {
               title={`${item.type === "video" ? "Video" : "Gambar"}: ${item.data.title}`}
             />
           ))}
-        </div>
+        </div> */}
       </main>
 
       {/* 3. FOOTER (Teks Berjalan & Pesan Merah di Bagian Bawah Layar) */}
