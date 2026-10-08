@@ -88,6 +88,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
+    id: "img-9",
+    src: "/images/ukk.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
     id: "img-10",
     src: "/images/sosialmedia.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
@@ -316,18 +322,19 @@ const DEFAULT_RUNNING_TEXT =
 const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
   {
     id: 1,
-    title: "Penyaluran Tunjangan Profesi Guru (TPG) Triwulan III",
+    title:
+      "Pertandingan Uji Coba Mini Soccer antara Peserta Magang dan Tim KGTK",
     content:
-      "Dihimbau kepada seluruh tim verifikator KGTK Provinsi Gorontalo untuk menuntaskan validasi data penerima TPG paling lambat hari Jumat pukul 16.00 WITA agar penerbitan SKTP berjalan tepat waktu.",
+      "Pertandingan uji coba mini soccer antara peserta magang dan tim KGTK Gorontalo berlangsung hari ini pukul 16.00 WITA di Lapangan KGTK.",
     priority: "urgent",
   },
-  {
-    id: 2,
-    title: "Bimbingan Teknis Fasilitator Literasi & Numerasi GTK",
-    content:
-      "Pembukaan resmi Bimtek Fasilitator Daerah diselenggarakan besok pukul 08.30 WITA di Aula Utama Dulohupa KGTK. Dihadiri 80 perwakilan guru dan pengawas sekolah.",
-    priority: "important",
-  },
+  // {
+  //   id: 2,
+  //   title: "Bimbingan Teknis Fasilitator Literasi & Numerasi GTK",
+  //   content:
+  //     "Pembukaan resmi Bimtek Fasilitator Daerah diselenggarakan besok pukul 08.30 WITA di Aula Utama Dulohupa KGTK. Dihadiri 80 perwakilan guru dan pengawas sekolah.",
+  //   priority: "important",
+  // },
 ];
 
 // Daftar audio yang diputar secara bergantian

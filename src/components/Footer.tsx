@@ -81,7 +81,7 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
 
               <span className="inline-flex items-center gap-2 text-slate-300">
                 <span>
-                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas,
+                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas
                   Kantor KGTK Provinsi Gorontalo
                 </span>
 
@@ -89,8 +89,14 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
               </span>
               <span className="inline-flex items-center gap-2 text-slate-300">
                 <span>
-                  Pelatihan PM KKA di Ruang Aula, Kantor KGTK Provinsi Gorontalo
+                  Pelatihan PM KKA di Ruang Aula Huyula Ambu Kantor KGTK
+                  Provinsi Gorontalo
                 </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>Pelaksanaan Tes Tertulis (SJT dan Studi Kasus)</span>
 
                 <span className="text-slate-600 px-2">✦</span>
               </span>
@@ -146,7 +152,7 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
 
               <span className="inline-flex items-center gap-2 text-slate-300">
                 <span>
-                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas,
+                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas
                   Kantor KGTK Provinsi Gorontalo
                 </span>
 
@@ -154,8 +160,14 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
               </span>
               <span className="inline-flex items-center gap-2 text-slate-300">
                 <span>
-                  Pelatihan PM KKA di Ruang Aula, Kantor KGTK Provinsi Gorontalo
+                  Pelatihan PM KKA di Aula Huyula Ambu Kantor KGTK Provinsi
+                  Gorontalo
                 </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>Pelaksanaan Tes Tertulis (SJT dan Studi Kasus)</span>
 
                 <span className="text-slate-600 px-2">✦</span>
               </span>
