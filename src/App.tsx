@@ -28,20 +28,32 @@ import {
 const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-1",
-    src: "/images/berprestasi.jpeg",
+    src: "/images/ibuola.jpeg",
+    title: "Gambar Informasi Pelayanan KGTK 1",
+    duration: 12,
+  },
+  {
+    id: "img-1",
+    src: "/images/ibuelviyen.jpeg",
+    title: "Gambar Informasi Pelayanan KGTK 1",
+    duration: 12,
+  },
+  {
+    id: "img-1",
+    src: "/images/ibusarini.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
   },
 
   {
     id: "img-3",
-    src: "/images/serbu-kasubi.jpeg",
+    src: "/images/serbukasubi.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
     id: "img-4",
-    src: "/images/kamis1.jpeg",
+    src: "/images/kamis21.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
@@ -246,6 +258,42 @@ const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-39",
     src: "/images/info10.JPG",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-40",
+    src: "/images/habibi1.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-41",
+    src: "/images/habibi2.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-42",
+    src: "/images/habibi3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-43",
+    src: "/images/habibi4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-44",
+    src: "/images/habibi5.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-45",
+    src: "/images/habibi6.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
