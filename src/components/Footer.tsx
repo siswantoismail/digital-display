@@ -78,6 +78,22 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
 
                 <span className="text-slate-600 px-2">✦</span>
               </span>
+
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>
+                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas,
+                  Kantor KGTK Provinsi Gorontalo
+                </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>
+                  Pelatihan PM KKA di Ruang Aula, Kantor KGTK Provinsi Gorontalo
+                </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
             </div>
 
             {/* ==============================
@@ -123,6 +139,22 @@ export function Footer({ runningText, urgentMessages = [] }: FooterProps) {
                   Kantor Guru dan Tenaga Kependidikan Provinsi Gorontalo
                   {" • "}
                   Bersama Mengabdi Membangun Karakter Guru Bangsa
+                </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
+
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>
+                  Pelatihan Matematika Gembira di Ruang Rapat dan Ruang Kelas,
+                  Kantor KGTK Provinsi Gorontalo
+                </span>
+
+                <span className="text-slate-600 px-2">✦</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-slate-300">
+                <span>
+                  Pelatihan PM KKA di Ruang Aula, Kantor KGTK Provinsi Gorontalo
                 </span>
 
                 <span className="text-slate-600 px-2">✦</span>
