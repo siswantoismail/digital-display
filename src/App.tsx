@@ -82,6 +82,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
+    id: "img-36",
+    src: "/images/gambar4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
     id: "img-8",
     src: "/images/gambar6.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
