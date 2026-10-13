@@ -27,19 +27,25 @@ import {
 // 1. Daftar Gambar (public/images/)
 const DEFAULT_IMAGES: ImageItem[] = [
   {
+    id: "img-35",
+    src: "/images/ibumentriwapres.jpeg",
+    title: "Gambar Informasi Pelayanan KGTK 1",
+    duration: 12,
+  },
+  {
     id: "img-1",
     src: "/images/ibuola.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
   },
   {
-    id: "img-1",
+    id: "img-2",
     src: "/images/ibuelviyen.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
   },
   {
-    id: "img-1",
+    id: "img-3",
     src: "/images/ibusarini.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
