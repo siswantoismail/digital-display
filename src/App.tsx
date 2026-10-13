@@ -27,12 +27,6 @@ import {
 // 1. Daftar Gambar (public/images/)
 const DEFAULT_IMAGES: ImageItem[] = [
   {
-    id: "img-35",
-    src: "/images/ibumentriwapres.jpeg",
-    title: "Gambar Informasi Pelayanan KGTK 1",
-    duration: 12,
-  },
-  {
     id: "img-1",
     src: "/images/ibuola.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
@@ -214,13 +208,43 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
-    id: "img-29",
+    id: "img-40",
     src: "/images/kegiatan10.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-30",
+    id: "img-41",
+    src: "/images/kegiatan15.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-42",
+    src: "/images/kegiatan16.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-43",
+    src: "/images/kegiatan17.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-44",
+    src: "/images/kegiatan18.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-45",
+    src: "/images/kegiatan19.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-46",
     src: "/images/info1.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
@@ -327,16 +351,34 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
+  {
+    id: "img-48",
+    src: "/images/apresiasi.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-49",
+    src: "/images/apresiasi2.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-50",
+    src: "/images/apresiasi1.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
 ];
 
 // 2. Daftar Video (public/videos/)
 const DEFAULT_VIDEOS: VideoItem[] = [
-  // {
-  //   id: "vid-1",
-  //   src: "/videos/apresiasi.mp4",
-  //   title: "Video Profil Pelayanan KGTK Gorontalo 1",
-  //   duration: 15,
-  // },
+  {
+    id: "vid-1",
+    src: "/videos/selamatdatang.mp4",
+    title: "Video Profil Pelayanan KGTK Gorontalo 1",
+    duration: 10,
+  },
 ];
 
 // 3. Pesan Footer: Teks Berjalan & Pesan Merah Berjalan
@@ -365,8 +407,8 @@ const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
 const daftarAudio = ["/audio/audio2.mpeg"];
 
 type PlaylistItem =
-  | { type: "image"; data: ImageItem }
-  | { type: "video"; data: VideoItem };
+  | { type: "video"; data: VideoItem }
+  | { type: "image"; data: ImageItem };
 
 export default function App() {
   // Pemutar backsound yang tetap berjalan saat slide berganti
@@ -375,8 +417,8 @@ export default function App() {
   // Menyimpan posisi audio yang sedang diputar
   const audioIndexRef = useRef(0);
   // State data utama (diinisialisasi langsung dari data konstan dalam program)
-  const [images] = useState<ImageItem[]>(DEFAULT_IMAGES);
   const [videos] = useState<VideoItem[]>(DEFAULT_VIDEOS);
+  const [images] = useState<ImageItem[]>(DEFAULT_IMAGES);
   const [runningText, setRunningText] = useState<string>(DEFAULT_RUNNING_TEXT);
   const [urgentMessages, setUrgentMessages] = useState<UrgentMessage[]>(
     DEFAULT_URGENT_MESSAGES,
@@ -399,8 +441,8 @@ export default function App() {
 
   // Susun urutan rotasi slide: Gambar dan Video berselang-seling atau berurutan
   const playlist: PlaylistItem[] = [
-    ...images.map((img) => ({ type: "image" as const, data: img })),
     ...videos.map((vid) => ({ type: "video" as const, data: vid })),
+    ...images.map((img) => ({ type: "image" as const, data: img })),
   ];
 
   // State navigasi slide
