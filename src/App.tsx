@@ -28,6 +28,12 @@ import {
 const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-1",
+    src: "/images/ibumentriwapres.jpeg",
+    title: "Gambar Informasi Pelayanan KGTK 1",
+    duration: 12,
+  },
+  {
+    id: "img-1",
     src: "/images/ibuola.jpeg",
     title: "Gambar Informasi Pelayanan KGTK 1",
     duration: 12,
@@ -562,19 +568,19 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
-    id: "img-82",
+    id: "img-84",
     src: "/images/post1 (12).jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-82",
+    id: "img-85",
     src: "/images/post1 (13).jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
   {
-    id: "img-82",
+    id: "img-86",
     src: "/images/post1 (14).jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
@@ -603,16 +609,40 @@ const DEFAULT_IMAGES: ImageItem[] = [
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
+  {
+    id: "img-83",
+    src: "/images/aps.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-84",
+    src: "/images/aps2.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-84",
+    src: "/images/aps3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-84",
+    src: "/images/aps4.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
 ];
 
 // 2. Daftar Video (public/videos/)
 const DEFAULT_VIDEOS: VideoItem[] = [
-  {
-    id: "vid-1",
-    src: "/videos/selamatdatang.mp4",
-    title: "Video Profil Pelayanan KGTK Gorontalo 1",
-    duration: 10,
-  },
+  // {
+  //   id: "vid-1",
+  //   src: "/videos/selamatdatang.mp4",
+  //   title: "Video Profil Pelayanan KGTK Gorontalo 1",
+  //   duration: 10,
+  // },
 ];
 
 // 3. Pesan Footer: Teks Berjalan & Pesan Merah Berjalan
