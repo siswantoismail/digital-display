@@ -652,10 +652,9 @@ const DEFAULT_RUNNING_TEXT =
 const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
   {
     id: 1,
-    title:
-      "Pertandingan Uji Coba Mini Soccer antara Peserta Magang dan Tim KGTK",
+    title: "Penandatanganan Nota Kesepakatan",
     content:
-      "Pertandingan uji coba mini soccer antara peserta magang dan tim KGTK Gorontalo berlangsung hari ini pukul 16.00 WITA di Lapangan KGTK.",
+      "Penandatanganan Nota Kesepakatan Antara Badan Pengembangan dan Pembinaan Bahasa dan Pemerintah Daerah Provinsi Gorontalo Tahun 2026",
     priority: "important",
   },
   // {
