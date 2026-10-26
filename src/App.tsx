@@ -76,6 +76,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
     duration: 12,
   },
   {
+    id: "img-6",
+    src: "/images/tim.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
     id: "img-7",
     src: "/images/gambar3.jpeg",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
@@ -684,6 +690,12 @@ const DEFAULT_IMAGES: ImageItem[] = [
   {
     id: "img-84",
     src: "/images/pra3.jpeg",
+    title: "Gambar Transformasi Pendidikan Gorontalo 3",
+    duration: 12,
+  },
+  {
+    id: "img-85",
+    src: "/images/simobalajari.JPEG",
     title: "Gambar Transformasi Pendidikan Gorontalo 3",
     duration: 12,
   },
