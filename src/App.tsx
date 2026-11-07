@@ -761,9 +761,9 @@ const DEFAULT_RUNNING_TEXT =
 const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
   {
     id: 1,
-    title: "Penandatanganan Nota Kesepakatan",
+    title: "Seminar Nasional",
     content:
-      "Penandatanganan Nota Kesepakatan Antara Badan Pengembangan dan Pembinaan Bahasa dan Pemerintah Daerah Provinsi Gorontalo Tahun 2026",
+      "Seminar Nasional Hari Guru KGTK Gorontalo akan diselenggarakan pada tanggal 14 November 2026 di Aula Kantor Bahasa Provinsi Gorontalo",
     priority: "important",
   },
   // {
@@ -981,7 +981,7 @@ export default function App() {
 
       <audio
         ref={backsoundRef}
-        src="/audio/audio2.mpeg"
+        src="/audio/audio.mp3"
         loop={false}
         preload="auto"
       />
