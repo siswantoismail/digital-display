@@ -766,13 +766,6 @@ const DEFAULT_URGENT_MESSAGES: UrgentMessage[] = [
       "Seminar Nasional Hari Guru KGTK Gorontalo akan diselenggarakan pada tanggal 14 November 2026 di Aula Kantor Bahasa Provinsi Gorontalo",
     priority: "important",
   },
-  // {
-  //   id: 2,
-  //   title: "Bimbingan Teknis Fasilitator Literasi & Numerasi GTK",
-  //   content:
-  //     "Pembukaan resmi Bimtek Fasilitator Daerah diselenggarakan besok pukul 08.30 WITA di Aula Utama Dulohupa KGTK. Dihadiri 80 perwakilan guru dan pengawas sekolah.",
-  //   priority: "important",
-  // },
 ];
 
 // Daftar audio yang diputar secara bergantian
@@ -1058,25 +1051,6 @@ export default function App() {
             </button>
           </>
         )}
-
-        {/* Indikator Dot di Pojok Kanan Bawah Layar */}
-        {/* <div className="absolute bottom-4 right-6 z-20 hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/60 backdrop-blur-md border border-slate-800/80">
-          {playlist.map((item, idx) => (
-            <button
-              key={item.data.id}
-              onClick={() => {
-                setCurrentIndex(idx);
-                setSlideProgress(0);
-              }}
-              className={`h-2 rounded-full transition-all cursor-pointer ${
-                currentIndex % totalSlides === idx
-                  ? "w-6 bg-sky-400"
-                  : "w-2 bg-slate-600 hover:bg-slate-400"
-              }`}
-              title={`${item.type === "video" ? "Video" : "Gambar"}: ${item.data.title}`}
-            />
-          ))}
-        </div> */}
       </main>
 
       {/* 3. FOOTER (Teks Berjalan & Pesan Merah di Bagian Bawah Layar) */}
